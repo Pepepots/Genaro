@@ -15,9 +15,11 @@ public class ListaLigada<T> {
     }
 
     private Nodo<T> head;
+    private int tamanio;
 
     public ListaLigada() {
         this.head = null;
+        this.tamanio = 0;
     }
 
     public boolean isEmpty() {
@@ -40,11 +42,13 @@ public class ListaLigada<T> {
         } else {
             this.getTail().next = new Nodo<T>(valor);
         }
+        this.tamanio++;
     }
     
     public void preAppend( T valor ){
         Nodo<T> tmp = this.head;
         this.head = new Nodo<T>( valor, tmp );
+        this.tamanio++;
     }
 
     public void transversal() {
@@ -62,8 +66,16 @@ public class ListaLigada<T> {
         System.out.println("");
     }
 
-    public void remove(){
+    // public void remove(){
         
+    // }
+
+    public void agregarImportancia(int importancia, T dato) {
+        Nodo<T> currNode = this.head;
+        
+        if(currNode.data.get >importancia){
+
+        }
     }
     
 }
