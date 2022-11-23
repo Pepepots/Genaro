@@ -22,14 +22,14 @@ public class App {
         // lista.append(3);
         // lista.transversal();
 
-        ConjuntoADT<Integer> conjuntoA = new ConjuntoADT<Integer>();
-        ConjuntoADT<Integer> conjuntoB = new ConjuntoADT<Integer>();
-        conjuntoB.agregar(1);
-        conjuntoB.agregar(2);
-        conjuntoB.agregar(3);
-        conjuntoA.agregar(1);
-        conjuntoA.agregar(2);
-        conjuntoA.agregar(4);
+        // ConjuntoADT<Integer> conjuntoA = new ConjuntoADT<Integer>();
+        // ConjuntoADT<Integer> conjuntoB = new ConjuntoADT<Integer>();
+        // conjuntoB.agregar(1);
+        // conjuntoB.agregar(2);
+        // conjuntoB.agregar(3);
+        // conjuntoA.agregar(1);
+        // conjuntoA.agregar(2);
+        // conjuntoA.agregar(4);
 
         // conjuntoA.agregar(2);
         // conjuntoA.eliminar(2);
@@ -39,35 +39,63 @@ public class App {
         // System.out.println(conjuntoB.equals(conjuntoA));
         // System.out.println(conjuntoA.esSubConjunto(conjuntoB));
 
-        Stack<Integer> pilaA = new Stack<Integer>();
-        pilaA.push(5);
-        pilaA.push(4);
-        pilaA.push(7);
-        pilaA.push(3);
+        // Stack<Integer> pilaA = new Stack<Integer>();
+        // pilaA.push(5);
+        // pilaA.push(4);
+        // pilaA.push(7);
+        // pilaA.push(3);
 
-        System.out.println(pilaA.isEmpty());
-        System.out.println(pilaA.length());
-        System.out.println(pilaA.peek());
-        System.out.println(pilaA.toString());
+        // System.out.println(pilaA.isEmpty());
+        // System.out.println(pilaA.length());
+        // System.out.println(pilaA.peek());
+        // System.out.println(pilaA.toString());
 
-        Stack<Integer> pilaB = new Stack<Integer>(2);
-        pilaB.push(5);
-        pilaB.push(4);
-        pilaB.push(7);
+        // Stack<Integer> pilaB = new Stack<Integer>(2);
+        // pilaB.push(5);
+        // pilaB.push(4);
+        // pilaB.push(7);
 
-        Queue<Integer> colaA = new Queue<Integer>();
-        colaA.enqueue(58);
-        colaA.enqueue(4);
-        colaA.enqueue(18);
+        // Queue<Integer> colaA = new Queue<Integer>();
+        // colaA.enqueue(58);
+        // colaA.enqueue(4);
+        // colaA.enqueue(18);
         // int quienSigue = colaA.dequeue();
         
         // System.out.println(quienSigue);
-        System.out.println(colaA.is_empty());
-        System.out.println(colaA.length());
+        // System.out.println(colaA.is_empty());
+        // System.out.println(colaA.length());
 
-        System.out.println("");
+        // System.out.println("");
 
-        System.out.println(colaA.toString());
+        // System.out.println(colaA.toString());
+
+        // ListasADT<Integer> prueba = new ListasADT<Integer>();
+
+        // prueba.agregarAlFinal(1);
+        // prueba.agregarAlFinal(2);
+        // prueba.agregarAlFinal(3);
+        // prueba.agregarAlFinal(4);
+        // prueba.agregarAlInicio(98);
+
+        // prueba.transversal();
+
+        // PriorityQueue cola = new PriorityQueue();
+        // cola.enqueue(1, 2);
+        // cola.enqueue(1, 3);
+        // cola.enqueue(1, 1);
+        // cola.enqueue(0, 5);
+        // cola.enqueue(80, 78);
+        // cola.enqueue(3, 67);
+        // cola.enqueue(4, 799);
+        // cola.dequeue();
+        // cola.transversal();
+
+        QueueAcotada<Integer> colaAcotada = new QueueAcotada<Integer>(3);
+        colaAcotada.enqueue(0, 1);
+        colaAcotada.enqueue(1, 2);
+        colaAcotada.enqueue(0, 3);
+        colaAcotada.enqueue(1, 1);
+        System.out.println(colaAcotada.toString());
     }
 
 }

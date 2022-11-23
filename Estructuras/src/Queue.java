@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Queue <T>{
+public class Queue<T>{
 
     ArrayList<T> cola;
     int tamanio;
@@ -40,5 +40,8 @@ public class Queue <T>{
         return str;  
     }
 
+    public ArrayList<T> getData() {
+        return cola;
+    }
 
 }

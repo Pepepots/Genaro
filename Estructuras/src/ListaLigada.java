@@ -1,5 +1,5 @@
 public class ListaLigada<T> {
-    private class Nodo<E> {
+    protected class Nodo<E> {
 
         E data;
         Nodo<E> next;
@@ -14,8 +14,8 @@ public class ListaLigada<T> {
         }
     }
 
-    private Nodo<T> head;
-    private int tamanio;
+    protected Nodo<T> head;
+    protected int tamanio;
 
     public ListaLigada() {
         this.head = null;
@@ -60,7 +60,6 @@ public class ListaLigada<T> {
             } else {
                 System.out.print(currNode.data + " ---> ");
             }
-//            System.out.println(currNode.data);
             currNode = currNode.next;
         }
         System.out.println("");
@@ -70,12 +69,12 @@ public class ListaLigada<T> {
         
     // }
 
-    public void agregarImportancia(int importancia, T dato) {
-        Nodo<T> currNode = this.head;
+    // public void agregarImportancia(int importancia, T dato) {
+    //     Nodo<T> currNode = this.head;
         
-        if(currNode.data.get >importancia){
+    //     // if(currNode.data >importancia){
 
-        }
-    }
+    //     // }
+    // }
     
 }
